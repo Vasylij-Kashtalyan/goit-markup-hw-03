@@ -17,42 +17,48 @@
 <body>
   <!-- Верхняя линия -->
   <header class="link">
-    <nav>
-      <a class="logo link" href="index.html" lang="en"> <span class="webstudio"> Web</span>Studio </a>
-      <ul class="site-nav list " >
-        <li class="">
-          <a class="nav link current" href="index.html">Студия</a>
-        </li>
-        <li class="">
-          <a class="nav link" href="./portfolio.html">Портфолио</a>
-        </li>
-        <li class="">
-          <a class="nav link" href="">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-
-      <ul class="info list">
-        <li class="">
-          <a class="info-title link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="">
-          <a class="info-title link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
-    
+    <div class="container header-container">
+      <nav class="header-nav">
+        <a class="logo link" href="index.html" lang="en"> <span class="webstudio"> Web</span>Studio </a>
+        <ul class="header-list list " >
+          <li class="header-item">
+            <a class="nav link current" href="index.html">Студия</a>
+          </li>
+          <li class="header-item">
+            <a class="nav link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="header-item">
+            <a class="nav link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+        <div class="header-contact">
+        <ul class="header-list list">
+          <li class="header-item">
+            <a class="info-title link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="header-item">
+            <a class="info-title link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+        </div>
+    </div>
   </header>
   <main>
     <!-- Герои -->
     <section class="hero">
-      <h1 class="hero-title">
-        Эффективные решения для вашего бизнеса
-      </h1>
-      <button class="button" type="button">Заказать услугу</button>
+      <div class="container hero-container">
+        <h1 class="hero-title">
+          Эффективные решения для вашего бизнеса
+        </h1>
+        <button class="button hero-button"type="button">Заказать услугу</button>
+      </div>
     </section>
     <!-- Особенности -->
     <section class="feature">
-      <h2 hidden>Особенности</h2>
+
+      <h2 class="visually-hidden">Особенности</h2>
+
       <ul class="list feature-items">
         <li class="feature-item">
           <h3 class="feature-title">Внимание к деталям</h3>

@@ -9,6 +9,22 @@
   --filters-background: #f5f4fa;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+}
+img {
+  display: block;
+}
+
 body {
   font-family: Roboto, sans-serif;
   background: var(--primary-white-color);
@@ -23,8 +39,25 @@ body {
 .list {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.container {
+  width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /* Верхняя линия */
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -39,6 +72,32 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--link-text-color);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+}
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-item {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.logo {
+  margin-right: 93px;
+}
+.header-contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
 }
 .current {
   color: var(--accent-color);
@@ -75,6 +134,7 @@ body {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
+
 .button:hover {
   background: var(--hover-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -86,12 +146,29 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
   color: #ffffff;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+.hero-container {
+  display: block;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-title {
+  align-items: center;
+  margin: auto;
+  width: 696px;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  display: block;
+  margin: auto;
 }
 
 /* Особенности */
