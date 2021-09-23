@@ -23,6 +23,8 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -91,6 +93,10 @@ body {
   margin-top: 32px;
   margin-bottom: 32px;
 }
+.nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .logo {
   margin-right: 93px;
 }
@@ -133,6 +139,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  outline: 1;
 }
 
 .button:hover {
@@ -154,10 +161,12 @@ body {
   border: none;
   cursor: pointer;
 }
+.hero {
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
 .hero-container {
   display: block;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 .hero-title {
   align-items: center;
@@ -169,6 +178,10 @@ body {
 .hero-button {
   display: block;
   margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 /* Особенности */
@@ -186,6 +199,23 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+.feature {
+  padding-top: 94px;
+}
+.feature-items {
+  display: flex;
+}
+.feature-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-item {
+  height: 75px;
+}
+.feature-title {
+  margin-bottom: 10px;
+}
+
 /*  Чем мы занимаемся  */
 .works {
   font-weight: 700;
@@ -194,6 +224,18 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--link-text-color);
+}
+.section-works {
+  padding-top: 94px;
+}
+.works {
+  margin-bottom: 50px;
+}
+.works-items {
+  display: flex;
+}
+.works-item:not(:last-child) {
+  margin-right: 30px;
 }
 /* Наша команда */
 .sectio-team {
@@ -222,6 +264,33 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+.sectio-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team {
+  margin-bottom: 50px;
+}
+.items-team {
+  display: flex;
+}
+.item-team {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.item-team:not(:last-child) {
+  margin-right: 30px;
+}
+.container-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: var(--primary-white-color);
+}
+.team-title {
+  margin-bottom: 10px;
+}
 /* ---------------Футер ------------- */
 .footer {
   background-color: var(--hero-background);
@@ -239,6 +308,20 @@ body {
 .map:hover,
 .map:focus {
   color: var(--accent-color);
+}
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: block;
+}
+.footer-logo {
+  margin-left: 35px;
+}
+.address-container {
+  margin-top: 20px;
+  padding-bottom: 9px;
 }
 
 /* ----------------------------Портфоли ------------------ */
