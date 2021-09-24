@@ -24,7 +24,6 @@ ul {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 body {
@@ -78,15 +77,22 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  padding-left: 215px;
+  padding-right: 215px;
+
   border: 1px solid #ececec;
 }
 .header-nav {
   display: flex;
   align-items: center;
 }
+.logo {
+  padding-right: 93px;
+}
 .header-list {
   display: flex;
 }
+
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -98,9 +104,10 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.logo {
-  margin-right: 93px;
-}
+/* .logo {
+  padding-right: 93px;
+  margin-left: 215px;
+} */
 .header-contact {
   display: flex;
   align-items: center;
@@ -346,20 +353,18 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.portfolio {
-}
+
 .filters {
   display: flex;
+  justify-content: center;
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-left: auto;
 }
 .filters-item {
-  align-items: center;
   margin-right: 8px;
 }
 .filters-button {
-  box-sizing: content-box;
-  display: flex;
   align-items: center;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -385,7 +390,20 @@ body {
 .project {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: calc(100% / 3 - 30px);
 }
-.project-item {
-  margin-right: 30px;
+/* .project-item {
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+} */
+.project-link {
+  /* align-items: center;
+  justify-content: center; */
+}
+.project-img {
+  align-items: center;
+  justify-content: center;
 }
